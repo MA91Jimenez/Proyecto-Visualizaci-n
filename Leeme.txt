@@ -1,0 +1,13 @@
+Estructura de los scripts y do-files:
+
+**En los do-files se desarrolla la base con la información del INEGI de la encuesta de población y vivienda para 2010 y los datos de PIB per cápita estatal obtenidos del Sistema Nacional de Información Municipal (http://snim.rami.gob.mx/) y del INAFED (http://www.inafed.gob.mx/en/inafed/Socioeconomico_Municipal); así:
+
+-El archivo "Bases05_10" agrega esta información y genera las variables importantes para el análisis para los años en cuestion.
+-El archivo "Base agregada2" concatena las bases y las guarda para ser ejecutadas en el programa Rstudio.
+
+**En los scrips de R, se generan mapas en leaflet y el análisis espacial del índice de Moran:
+
+-En el archivo "Mapas 2005" y "Mapas 2010" se generan los mapas que se visualizan en la pagina web por separado.
+-En el archivo "Mapas agregados" se generan mapas en leaflet que contienen más de una categoria para el año base del análisis, es decir el 2005.
+-En el archivo "Moran" se implementa el análisis geoespacial de correlaciones, así como los mapas propios de la sección.
+-En el archivo IVreg se implementan variables instrumentables del modelo de crecimiento económico municipal.
